@@ -57,6 +57,7 @@ header .menu-icon__count {
 .filter {
   max-width: 160px;
   position: relative;
+  z-index: 2;
 }
 
 .filter-title {

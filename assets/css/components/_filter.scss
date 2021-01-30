@@ -1,6 +1,7 @@
 .filter {
   max-width: 160px;
   position: relative;
+  z-index:2;
 
   &-title {
     color: $black-gray;
