@@ -1,0 +1,28 @@
+.sidebar {
+    &-title {
+        font-size: 32px;
+        color: $black-gray;
+        font-weight: bold;
+    }
+
+    &-content {
+        margin-top: 24px;
+        display: grid;
+        gap: 16px;
+        list-style: none;
+
+        &__link {
+            color: $gray-light;
+            text-decoration: none;
+
+            &.active {
+                text-decoration: underline;
+                color: $black-gray;
+            }
+
+            &:hover:not(.active) {
+                color: gray;
+            }
+        }
+    }
+}

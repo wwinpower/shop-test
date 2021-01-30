@@ -1,0 +1,40 @@
+.filter {
+  max-width: 160px;
+  position: relative;
+
+  &-title {
+    color: $black-gray;
+
+    span {
+      color: $gray;
+      cursor: pointer;
+    }
+  }
+
+  &-content {
+    list-style: none;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 8px 0;
+    position: absolute;
+    width: 100%;
+    display: none;
+
+    &__active {
+      display: block;
+    }
+
+    &__item {
+      padding: 4px 12px;
+      color: $gray-light;
+
+      &:hover {
+        background-color: #f8f8f8;
+        color: $black-gray;
+        cursor: pointer;
+      }
+    }
+  }
+}

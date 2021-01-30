@@ -1,0 +1,45 @@
+header {
+    .menu {
+        background: $white;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+        border-radius: 0px 0px 8px 8px;
+
+        .logo {
+            color: $gray;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        &__content {
+            @include content-center;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-icon {
+            position: relative;
+
+            &__count {
+                $size: 20px;
+                font-weight: bold;
+                position: absolute;
+                display: block;
+                background-color: $gray-light;
+                border-radius: 50%;
+                color: $white;
+                width: $size;
+                height: $size;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: -$size/2;
+                right: -$size/2;
+            }
+        }
+    }
+}
